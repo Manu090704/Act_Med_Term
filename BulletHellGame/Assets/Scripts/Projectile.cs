@@ -7,7 +7,7 @@ public class Projectile : MonoBehaviour
 
     void Start()
     {
-        // La bala se crea → registramos
+        // La bala se crea y se registra
         BulletHellGameManager.singleton.RegisterBullet();
     }
 
@@ -18,13 +18,13 @@ public class Projectile : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        // Aquí destruyes la bala si choca
+        // Aquí se destruye la bala si choca
         Destroy(gameObject);
     }
 
     private void OnDestroy()
     {
-        // La bala se destruye → desregistramos
+        // cuando la bala se destruye se quita del contador
         if (BulletHellGameManager.singleton != null)
             BulletHellGameManager.singleton.UnregisterBullet();
     }

@@ -60,7 +60,6 @@ public class BulletHellEnemy : BulletHellCar
         }
         else
         {
-            // Aquí puedes decidir si quieres que haga otros movimientos o disparos
             rb.linearVelocity = moveInput * acceleration;
         }
     }

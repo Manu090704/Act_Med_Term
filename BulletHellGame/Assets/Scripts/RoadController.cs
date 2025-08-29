@@ -14,8 +14,8 @@ public class RoadController : MonoBehaviour
 
     void Start()
     {
-        // Crea el primer bloque de carretera como hijo del controlador
-        lastRoad = Instantiate(roadPrefab, Vector3.zero, Quaternion.identity); // sin parent
+        // Primer bloque de carretera como hijo del controlador
+        lastRoad = Instantiate(roadPrefab, Vector3.zero, Quaternion.identity);
     }
 
     void Update()

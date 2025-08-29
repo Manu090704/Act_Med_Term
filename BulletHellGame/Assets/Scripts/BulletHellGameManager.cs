@@ -67,7 +67,7 @@ public class BulletHellGameManager : MonoBehaviour
     // ----------------------------
     // BulletManager integrado
     // ----------------------------
-    public TextMeshProUGUI bulletCounterText; // <- Cambiado a TMP
+    public TextMeshProUGUI bulletCounterText;
 
     private void Awake()
     {

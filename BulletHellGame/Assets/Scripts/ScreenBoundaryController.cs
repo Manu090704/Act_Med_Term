@@ -11,8 +11,6 @@ public class ScreenBoundaryController : MonoBehaviour
         left.transform.position = new Vector2(-4.17f, 0.37f);
         right.transform.position = new Vector2(3.8f, 0.73f);
 
-        // Mantener la escala original o ajustarla según quieras
-        // Por ejemplo:
         left.transform.localScale = new Vector3(1, 10, 1);   // altura 10 unidades
         right.transform.localScale = new Vector3(1, 10, 1);
 

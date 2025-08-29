@@ -16,7 +16,7 @@ public class BulletHellPlayer : BulletHellCar
 
     void FixedUpdate()
     {
-        rb.linearVelocity = moveInput * moveSpeed; // Corregido
+        rb.linearVelocity = moveInput * moveSpeed;
     }
 
     protected override void TakeInput()
@@ -44,7 +44,7 @@ public class BulletHellPlayer : BulletHellCar
         }
         else if (other.gameObject.layer == 11) 
         {
-            TakeDamage(other.GetComponent<Projectile>().damage); // Example damage value
+            TakeDamage(other.GetComponent<Projectile>().damage);
             Destroy(other.gameObject);
         }
     }
