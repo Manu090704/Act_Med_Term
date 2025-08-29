@@ -24,8 +24,6 @@ public class BulletHellEnemy : BulletHellCar
     protected override void Start()
     {
         base.Start();
-        rb = GetComponent<Rigidbody2D>();
-        rb.freezeRotation = true;
 
         // Inicializar temporizador de movimiento inicial
         initialMoveStartTime = Time.time;

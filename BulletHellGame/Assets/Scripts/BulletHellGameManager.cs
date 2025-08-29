@@ -53,7 +53,7 @@ public class BulletHellGameManager : MonoBehaviour
         new SpawnAction(ShipType.BasicEnemy, new Vector3(2,8,0), 6f),
         new SpawnAction(ShipType.BasicEnemy, new Vector3(0,8,0), 2f),
         new SpawnAction(ShipType.BasicEnemy, new Vector3(1,8,0), 4f),
-        new SpawnAction(ShipType.BasicEnemy, new Vector3(4,8,0), 4f),
+        new SpawnAction(ShipType.BasicEnemy, new Vector3(2,8,0), 4f),
         new SpawnAction(ShipType.BasicEnemy, new Vector3(-2,8,0), 6f),
         new SpawnAction(ShipType.BasicEnemy, new Vector3(2,8,0), 6f),
         new SpawnAction(ShipType.BasicEnemy2, new Vector3(0,8,0), 8f),

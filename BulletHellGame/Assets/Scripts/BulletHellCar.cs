@@ -26,6 +26,8 @@ public class BulletHellCar : MonoBehaviour
     protected virtual void Start()
     {
         IntialiseShip();
+        rb = GetComponent<Rigidbody2D>();
+        rb.freezeRotation = true;
     }
 
     // Update is called once per frame
