@@ -8,7 +8,7 @@ public class BulletHellGameManager : MonoBehaviour
     public static BulletHellGameManager singleton;
 
     // ----------------------------
-    // 📌 Diccionarios de configuración
+    // Diccionarios de configuración
     // ----------------------------
     public static Dictionary<ShipType, ShipData> shipDataDictionary = new Dictionary<ShipType, ShipData>()
     {
@@ -65,7 +65,7 @@ public class BulletHellGameManager : MonoBehaviour
 
     public static Dictionary<ShipType, GameObject> shipPrefabDictionary;
     // ----------------------------
-    // 📌 BulletManager integrado
+    // BulletManager integrado
     // ----------------------------
     public TextMeshProUGUI bulletCounterText; // <- Cambiado a TMP
 
@@ -81,7 +81,7 @@ public class BulletHellGameManager : MonoBehaviour
     }
 
     // ----------------------------
-    // 📌 Métodos de balas
+    // Métodos de balas
     // ----------------------------
 
     public void RegisterBullet()
@@ -105,7 +105,7 @@ public class BulletHellGameManager : MonoBehaviour
 }
 
 // ----------------------------
-// 📌 Clases auxiliares
+// Clases auxiliares
 // ----------------------------
 public enum ShipType
 {

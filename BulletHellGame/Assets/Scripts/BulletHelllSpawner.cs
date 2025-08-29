@@ -12,7 +12,7 @@ public class BulletHellSpawner : MonoBehaviour
         // Verifica que la lista exista y tenga elementos
         if (BulletHellGameManager.spawnActions == null || BulletHellGameManager.spawnActions.Count == 0)
         {
-            Debug.LogError("❌ No hay SpawnActions definidos en BulletHellGameManager.");
+            Debug.LogError("No hay SpawnActions definidos en BulletHellGameManager.");
             return;
         }
 
@@ -47,20 +47,20 @@ public class BulletHellSpawner : MonoBehaviour
         // Verifica que el diccionario exista y tenga la clave
         if (BulletHellGameManager.shipPrefabDictionary == null)
         {
-            Debug.LogError("❌ shipPrefabDictionary no está inicializado en BulletHellGameManager.");
+            Debug.LogError("shipPrefabDictionary no está inicializado en BulletHellGameManager.");
             return;
         }
 
         if (!BulletHellGameManager.shipPrefabDictionary.ContainsKey(spawnAction.enemy))
         {
-            Debug.LogError("❌ No se encontró el prefab para enemy: " + spawnAction.enemy);
+            Debug.LogError("No se encontró el prefab para enemy: " + spawnAction.enemy);
             return;
         }
 
         GameObject prefab = BulletHellGameManager.shipPrefabDictionary[spawnAction.enemy];
         if(prefab == null)
         {
-            Debug.LogError("❌ Prefab null para " + spawnAction.enemy + ". Revisa Resources/Prefabs/");
+            Debug.LogError("Prefab null para " + spawnAction.enemy + ". Revisa Resources/Prefabs/");
             return;
         }
 
@@ -78,7 +78,7 @@ public class BulletHellSpawner : MonoBehaviour
             }
             else
             {
-                Debug.LogWarning("⚠️ El prefab " + spawnAction.enemy + " no tiene BulletHellCar.");
+                Debug.LogWarning("El prefab " + spawnAction.enemy + " no tiene BulletHellCar.");
             }
         }
     }

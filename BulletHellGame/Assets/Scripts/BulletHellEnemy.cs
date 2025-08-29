@@ -16,7 +16,7 @@ public class BulletHellEnemy : BulletHellCar
     private float patternStartTime;
 
 
-    private bool initialMoveDone = false; // ✅ bandera para saber si ya se movió hacia abajo
+    private bool initialMoveDone = false; // bandera para saber si ya se movió hacia abajo
     private float initialMoveSpeed = 5f; // velocidad inicial hacia abajo
     private float initialMoveDuration = 1f; // tiempo que dura el movimiento inicial
     private float initialMoveStartTime;
@@ -134,7 +134,7 @@ public class BulletHellEnemy : BulletHellCar
                     break;
 
                 case ShootPatternType.Spiral: 
-                    ShootSpiral();
+                    ShootCross();
                     break;
             }
         }
@@ -162,9 +162,9 @@ public class BulletHellEnemy : BulletHellCar
     }
 
 
-    void ShootSpiral()
+    void ShootCross()
     {
-        // Coordenadas de los ángulos para formar un cuadrado (cruz)
+        // Coordenadas de los ángulos para formar un cruz
         float[] angles = { 0f, 90f, 180f, 270f };
 
         foreach (float angle in angles)
